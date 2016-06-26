@@ -1,0 +1,28 @@
+{
+  "name": "autosend_weekly_report_node",
+  "version": "1.0.0",
+  "description": "send an email to your boss with weekly report automatic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "forever start -l autosend_weekly-report.log -a index.js",
+    "stop": "forever stop index.js",
+    "restart": "forever restart index.js"
+  },
+  "keywords": [
+    "node",
+    "email",
+    "excel",
+    "node-schedule"
+  ],
+  "author": "Xat_MassacrE",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.13.0",
+    "node-schedule": "^1.1.1",
+    "node-xlsx": "^0.7.1",
+    "nodemailer": "^2.4.2",
+    "nodemailer-smtp-transport": "^2.5.0",
+    "underscore": "^1.8.3"
+  }
+}
